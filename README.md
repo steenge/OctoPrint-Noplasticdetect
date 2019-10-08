@@ -1,5 +1,8 @@
 # OctoPrint-Noplasticdetect
 
+NOTE: This project is under development, and not yet fully functional! 
+
+
 Extremely simple plugin that pause the printer if a DIY filament sensor detects that the roll of filament runs out.  
 
 The sensor contain no active electroics and is based on a microswitch.
@@ -21,8 +24,4 @@ or manually using this URL:
 
 **TODO:** Describe your plugin's configuration options (if any).
 
-To be added, but most likely:
 
-Switch-style:
-- Closed=Filament out
-- Open = Filament out
