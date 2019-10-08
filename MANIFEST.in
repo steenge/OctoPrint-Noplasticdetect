@@ -1,0 +1,4 @@
+include README.md
+recursive-include octoprint_noplasticdetect/templates *
+recursive-include octoprint_noplasticdetect/translations *
+recursive-include octoprint_noplasticdetect/static *
