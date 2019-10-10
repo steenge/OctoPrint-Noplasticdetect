@@ -8,6 +8,7 @@ from time import sleep
 
 
 class NoPlasticDetectPlugin(octoprint.plugin.StartupPlugin,
+                            octoprint.plugin.TemplatePlugin,
                             octoprint.plugin.SettingsPlugin):
 
         def initialize(self):
