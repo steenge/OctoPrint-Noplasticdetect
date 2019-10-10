@@ -51,7 +51,7 @@ class NoPlasticDetectPlugin(octoprint.plugin.StartupPlugin,
                 else:
                         self-logger("Plugin not enabled.")
 
-        def get_settings_default(self):
+        def get_settings_defaults(self):
                 return dict(
                         pin = -1, #GPIO pin, -1 = plugin is disabled
                         NormallyOpen = 1 # is the switch open or closen when no filament (default=closed)
@@ -109,7 +109,11 @@ class NoPlasticDetectPlugin(octoprint.plugin.StartupPlugin,
                         ## SEND PAUSE HER
                 else:
                         self._logger.info("Filament detected.")
+
+__plugin_name__ = "No Plastic Detect"
+__plugin_version__ = "0.9.0"
                         
-__plugin_name__ = "NoPlasticDetect"                
-__plugin_implementation__ = NoPlasticDetectPlugin()
+def __plugin_load():
+        global __plugin_implementation__
+        __plugin_implementation__ = NoPlasticDetectPlugin()
                             
