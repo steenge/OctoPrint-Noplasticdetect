@@ -50,7 +50,11 @@ class NoPlasticDetectPlugin(octoprint.plugin.StartupPlugin,
 
         
 
-                
+        def get_template_configs(self):
+            return [
+            #        dict(type="navbar", custom_bindings=False),
+                    dict(type="settings", custom_bindings=False)
+            ]
 
                 
                                     
